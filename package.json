@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "tsx src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec tsx src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "seed:permissions": "tsx src/script/seedPermissions.ts",
+    "seed:adminRole": "tsx src/script/seedAdminRole.ts"
+
   },
   "author": "",
   "license": "ISC",

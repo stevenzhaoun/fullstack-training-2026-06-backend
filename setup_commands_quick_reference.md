@@ -12,7 +12,12 @@ npm init -y
 git init
 ```
 
+1.2 
+After Clone
 
+```bash
+npm install
+```
 
 
 2. Install initial dependencies
