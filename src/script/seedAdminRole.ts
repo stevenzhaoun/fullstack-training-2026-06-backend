@@ -11,8 +11,6 @@ const seedAdminRole = async () => {
                     { name: PERMISSIONS.USERS.EDIT },
                     { name: PERMISSIONS.ROLES.READ },
                     { name: PERMISSIONS.ROLES.EDIT },
-                    { name: PERMISSIONS.PERMISSIONS.READ },
-                    { name: PERMISSIONS.PERMISSIONS.EDIT },
                     { name: PERMISSIONS.PRODUCTS.READ },
                     { name: PERMISSIONS.PRODUCTS.EDIT },
                     { name: PERMISSIONS.ORDERS.READ },

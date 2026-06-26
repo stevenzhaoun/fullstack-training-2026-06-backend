@@ -7,10 +7,6 @@ export const PERMISSIONS = {
         READ: "roles:read",
         EDIT: "roles:edit",
     },
-    PERMISSIONS: {
-        READ: "permissions:read",
-        EDIT: "permissions:edit",
-    },
     PRODUCTS: {
         READ: "products:read",
         EDIT: "products:edit",
