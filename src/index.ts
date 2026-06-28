@@ -4,6 +4,8 @@ import rolesRouter from './routes/roles';
 import userRouter from './routes/user';
 import authRouter from './routes/auth';
 import { authentication } from './middlewares/authentication';
+import productsRouter from './routes/products';
+import ordersRouter from './routes/orders';
 
 const app = express();
 
@@ -15,6 +17,8 @@ app.use(authentication)
 
 app.use(rolesRouter)
 app.use(userRouter)
+app.use(productsRouter)
+app.use(ordersRouter)
 
 
 app.get('/', (req, res) => {

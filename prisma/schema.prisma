@@ -39,3 +39,20 @@ model Permission {
   name String @unique
   roles Role[] @relation("RolePermissions")
 }
+
+model Product {
+  id Int @id @default(autoincrement())
+  title String
+  description String
+  price Float
+  orders Order[] @relation("OrderProducts")
+}
+
+model Order {
+  id Int @id @default(autoincrement())
+  email String
+  name String
+  createdAt DateTime @default(now())
+  totalPrice Float
+  products Product[] @relation("OrderProducts")
+}
